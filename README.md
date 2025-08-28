@@ -4,7 +4,7 @@ A phase-by-phase home lab project simulating enterprise network &amp; system adm
 
 This is my self-built **Enterprise IT Home Lab** where I simulate how real organizations manage users, networks, security, and updates.  
 
-I am currently working as an **E-Fraud & Forensic investigation Analyst**, but I have a strong passion for **Networks, configuration, routing, switching and Systems Administration** . Basically, how the netork topology work and how we users interact through them, along side ways to secure it .  
+I am currently working as an **E-Fraud & Forensic investigation Analyst**, but I have a strong passion for **Networks, configuration, routing, switching and Systems Administration** . Basically, how the network topology works and how we users interact through them, along side ways to secure it .  
 This lab is my way of learning step by step and documenting the journey publicly.  
 
 Built using **VirtualBox**, with Windows Server 2016 and Windows 10 workstations.  
