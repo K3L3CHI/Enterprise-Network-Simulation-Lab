@@ -13,6 +13,7 @@ Set up the virtualization platform and install the server OS for the Enterprise 
 
 ---
 
-## Screenshots  
-[Download all screenshots (ZIP)](./SCREENSHOTS_PHASE1.zip)
+## Screenshots    
+[Download all screenshots (ZIP)](./SCREENSHOTS_PHASE_1.zip)
+
 
