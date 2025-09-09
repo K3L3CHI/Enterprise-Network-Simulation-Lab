@@ -1,19 +1,24 @@
 # Phase 4 – Workstation Join + DHCP Setup  
 
 ## Goal  
-Add Windows 10 workstations to the domain and configure DHCP for automatic IP addressing.  
+Connect the client machine to the domain and automate IP assignment using DHCP.  
 
 ## Tasks Completed  
-- Installed and configured the DHCP Server role on ENSL-DC01  
-- Created a DHCP scope:  
-  - Name: ENSL-Scope  
-  - IP Range: 192.168.100.50 – 192.168.100.200  
-  - Subnet Mask: 255.255.255.0  
-  - Default Gateway: 192.168.100.1  
-  - DNS Server: 192.168.100.10 (Domain Controller)  
-- Activated the DHCP scope  
-- Joined Windows 10 workstation(s) to the **ensl.lab** domain  
-- Verified DHCP leases and domain join status  
+- Renamed and configured **Enterprise-WS01** (Windows 10)  
+- Joined workstation to **ensl.local** domain  
+- Installed and configured DHCP on **ENSL-DC01**  
+- Configured DHCP scope:  
+  - IP Range: 192.168.100.30 – 192.168.100.100  
+  - Exclusions: 192.168.100.30 – 192.168.100.39  
+  - DNS: 192.168.100.10  
+  - Gateway placeholder: 192.168.100.1  
+- Reserved IP **192.168.100.99** for **Enterprise-WS01**  
+- Resolved DHCP issues and verified successful IP assignment  
+
+---
+
+## Outcome  
+The workstation is now domain-joined, and IP assignment is handled automatically through DHCP with proper reservations and exclusions.  
 
 ---
 
