@@ -1,14 +1,33 @@
 # Phase 3.5 – DNS Configuration & Verification  
 
 ## Goal  
-Configure and verify Domain Name System (DNS) services to ensure name resolution works properly in the enterprise lab environment.  
+Ensure reliable hostname resolution inside the lab environment.  
 
 ## Tasks Completed  
-- Installed and configured the DNS Server role (if not installed automatically with AD DS)  
-- Verified Forward Lookup Zone for **ensl.lab**  
-- Configured Reverse Lookup Zone for IP-to-name resolution  
-- Tested DNS resolution using `nslookup` and ping commands  
-- Ensured domain controllers and workstations could resolve names properly  
+- **Forward Lookup Zone**  
+  - Confirmed *ensl.local* created during DC promotion.  
+  - Verified A records:  
+    - dc01.ensl.local → 192.168.100.10  
+    - ws01.ensl.local → 192.168.100.99  
+- **Reverse Lookup Zone**  
+  - Created *100.168.192.in-addr.arpa.*  
+  - Verified PTR records:  
+    - 192.168.100.10 → dc01.ensl.local  
+    - 192.168.100.99 → ws01.ensl.local  
+- **Testing**  
+  - On WS01:  
+    - ping dc01.ensl.local → reply ✅  
+    - nslookup dc01.ensl.local → 192.168.100.10 ✅  
+    - nslookup 192.168.100.99 → ws01.ensl.local ✅  
+- **Integration**  
+  - DHCP option 006 points clients to 192.168.100.10 for DNS.  
+  - Verified domain logon and GPO processing succeed.  
+
+---
+
+## Outcome  
+DNS is fully functional with forward & reverse lookups.  
+This forms the **critical foundation** for AD, GPO, file shares, and printing.  
 
 ---
 
