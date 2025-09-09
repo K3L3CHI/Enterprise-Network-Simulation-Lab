@@ -4,7 +4,7 @@ A phase-by-phase **home lab project** simulating real-world enterprise network a
 
 This is my self-built **Enterprise IT Home Lab** where I simulated how organizations manage users, networks, security, and updates from scratch to completion.  
 
-I currently work as an **E-Fraud & Forensic Investigation Analyst**, but I have a strong passion for **Networks, Systems Administration, and Security**.  
+I have a strong passion for **Networks, Systems Administration, and Security**.  
 This lab allowed me to learn step-by-step, implement key IT infrastructure concepts, and document the entire journey publicly.  
 
 Built using **VirtualBox** with **Windows Server 2016** and **Windows 10 Workstations**.
